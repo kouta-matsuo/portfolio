@@ -1,0 +1,29 @@
+// welcomeのスタイル
+.top-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   position: relative;
+   color: $white;
+
+    img {
+        width: 100vw;
+        height: 50vh;
+        object-fit: cover;
+    }
+    
+    .catch {
+        position: absolute;
+        text-align: center;
+        font-size: 1.5rem;
+        text-shadow: .1rem .1rem $blue;
+        
+        p {
+            width: 80%;
+            margin: 0 auto;
+            text-align: justify;
+            padding-bottom: 2rem;
+        }
+    }
+}

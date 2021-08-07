@@ -1,12 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 62.5%;
 }
 
-header {
-  background-color: #FF82B2;
+.container {
+  padding: 0;
+  margin: 0;
 }
 
-header h1 {
+header {
+  background-color: #003366;
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+header .top-logo {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+
+.top-nav img {
+  width: 100vw;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.top-nav .catch {
+  position: absolute;
+  text-align: center;
   font-size: 1.5rem;
+  text-shadow: 0.1rem 0.1rem #003366;
+}
+
+.top-nav .catch p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  padding-bottom: 2rem;
+}
+
+.text-center {
+  padding-top: 3rem;
+}
+
+.register-form {
+  padding: 0 2rem;
+}
+
+.register-form .form-group {
+  padding-top: 2rem;
+}
+
+.register-form .last {
+  padding-bottom: 2rem;
 }
 

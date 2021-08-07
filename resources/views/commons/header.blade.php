@@ -1,4 +1,4 @@
 <header>
-    <h1>Go To</h1>
+    <a href="/" class="top-logo">Go To</a>
     
 </header>
