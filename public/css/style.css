@@ -10,6 +10,7 @@ html {
 .container {
   padding: 0;
   margin: 0;
+  width: 100vw;
 }
 
 header {
@@ -32,6 +33,7 @@ header .top-logo {
   align-items: center;
   position: relative;
   color: #fff;
+  width: 100vw;
 }
 
 .top-nav img {
@@ -55,6 +57,51 @@ header .top-logo {
   padding-bottom: 2rem;
 }
 
+.top-nav .catch .register-button {
+  margin-right: 2rem;
+}
+
+.top-content {
+  padding: 3rem 2rem 0;
+}
+
+.top-content h2 {
+  text-align: center;
+}
+
+.top-content .goto {
+  padding-top: 3rem;
+}
+
+.top-content .goto h3 {
+  display: flex;
+  align-items: center;
+}
+
+.top-content .goto h3 strong {
+  font-size: 3rem;
+  text-shadow: 0.1rem 0.1rem 0 #003366, -0.1rem 0.1rem 0 #003366, 0.1rem -0.1rem 0 #003366, -0.1rem -0.1rem 0 #003366;
+  color: #FFFF77;
+  padding-right: 2rem;
+}
+
+.top-content .goto .section-content {
+  display: flex;
+  width: 100%;
+}
+
+.top-content .goto .section-content p {
+  width: 50%;
+  padding-top: 2rem;
+}
+
+.top-content .goto .section-content img {
+  width: 50%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .text-center {
   padding-top: 3rem;
 }
@@ -69,5 +116,21 @@ header .top-logo {
 
 .register-form .last {
   padding-bottom: 2rem;
+}
+
+.login-form {
+  padding: 0 2rem;
+}
+
+.login-form .form-group {
+  padding-top: 2rem;
+}
+
+.login-form .last {
+  padding-bottom: 2rem;
+}
+
+.login-form .register-link {
+  padding-top: 2rem;
 }
 

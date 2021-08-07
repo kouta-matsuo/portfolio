@@ -6,6 +6,7 @@
     align-items: center;
    position: relative;
    color: $white;
+   width: 100vw;
 
     img {
         width: 100vw;
@@ -24,6 +25,47 @@
             margin: 0 auto;
             text-align: justify;
             padding-bottom: 2rem;
+        }
+        
+        .register-button {
+            margin-right: 2rem;
+        }
+    }
+}
+
+.top-content {
+    padding: 3rem 2rem 0;
+    h2 {
+        text-align: center;
+    }
+    
+    .goto {
+        padding-top: 3rem;
+        h3 {
+            display: flex;
+            align-items: center;
+            
+            strong {
+            font-size: 3rem;
+            text-shadow: .1rem .1rem 0 $blue,-.1rem .1rem 0 $blue, .1rem -.1rem 0 $blue,-.1rem -.1rem 0 $blue;
+            color: $yellow;
+            padding-right: 2rem;
+            }
+        }
+        
+        .section-content {
+            display: flex;
+            width: 100%;
+            p {
+            width: 50%;
+            padding-top: 2rem;
+        }
+        
+        img {
+            width: 50%;
+            height: auto;
+            object-fit: cover;
+        }
         }
     }
 }
