@@ -23,6 +23,6 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        \URL::forseScheme('https');
+        \URL::forceScheme('https');
     }
 }
