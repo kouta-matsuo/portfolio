@@ -1,0 +1,39 @@
+//micropostsのスタイル
+
+.bigfreme{
+    width: 100%;
+    width: calc(100% - 4rem);
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    
+    &:first-child {
+        padding-top: 5rem;
+    }
+
+.freme {
+    width: 100%;
+    // border: .1rem solid $blue;
+    border-radius: .5rem;
+     border: .2rem solid $blue;
+    padding: 2rem 0;
+   
+    
+    p {
+        padding: 0 0 1rem 2rem;
+        // border-bottom: .1rem solid $blue;
+    }
+}
+}
+
+.create-button {
+    position: fixed;
+    bottom: 5%;
+    right: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+}

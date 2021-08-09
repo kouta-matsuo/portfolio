@@ -15,13 +15,20 @@ html {
 
 header {
   background-color: #003366;
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 1rem 2rem;
 }
 
 header .top-logo {
   font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+header .logout-link {
   color: #fff;
   text-decoration: none;
 }
@@ -63,6 +70,7 @@ header .top-logo {
 
 .top-content {
   padding: 3rem 2rem 0;
+  width: 100vw;
 }
 
 .top-content h2 {
@@ -132,5 +140,52 @@ header .top-logo {
 
 .login-form .register-link {
   padding-top: 2rem;
+}
+
+.bigfreme {
+  width: 100%;
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.bigfreme:first-child {
+  padding-top: 5rem;
+}
+
+.bigfreme .freme {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #003366;
+  padding: 2rem 0;
+}
+
+.bigfreme .freme p {
+  padding: 0 0 1rem 2rem;
+}
+
+.create-button {
+  position: fixed;
+  bottom: 5%;
+  right: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+}
+
+.create-form {
+  padding: 2rem 2rem 0;
+}
+
+.create-form h2 {
+  padding-bottom: 2rem;
+}
+
+.create-form .form-group {
+  padding-bottom: 2rem;
 }
 

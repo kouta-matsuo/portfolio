@@ -1,11 +1,19 @@
 header {
     background-color: $blue;
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding: 1rem 2rem;
     
+    
     .top-logo {
         font-size: 2rem;
+        color: $white;
+        text-decoration: none;
+    }
+    
+    .logout-link {
         color: $white;
         text-decoration: none;
     }

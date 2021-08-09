@@ -2,6 +2,10 @@
 
 @section('content')
 
+@if(Auth::check())
+{{ Auth::user()->name }}
+
+@else
 <div class="top-nav">
     <img src="{{ asset('images/img-vue3.jpeg') }}" alt="夕焼けの写真">
     <div class="catch">
@@ -34,5 +38,6 @@
         </div>
     </section>
 </div>
+@endif
 
 @endsection
