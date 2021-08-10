@@ -4,11 +4,12 @@
     width: 100%;
     width: calc(100% - 4rem);
     margin: 0 auto;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
     
     &:first-child {
-        padding-top: 5rem;
+        padding-top: 14rem;
     }
+    
 
 .freme {
     width: 100%;
@@ -19,8 +20,20 @@
    
     
     p {
-        padding: 0 0 1rem 2rem;
-        // border-bottom: .1rem solid $blue;
+        padding: 0 1rem 1rem 0;
+         border-bottom: .2rem solid $gray;
+         width: 100%;
+    }
+    
+    .micropost-content {
+        display: flex;
+        width: calc(100% - 2rem);
+        
+        .title {
+            margin-left: 2rem;
+            width: 35%;
+            
+        }
     }
 }
 }
@@ -36,4 +49,21 @@
     width: 4rem;
     height: 4rem;
     font-size: 2rem;
+}
+
+.micropost-button {
+    display: flex;
+    justify-content: space-between;
+    
+    .edit-button {
+        width: 7rem;
+    }
+    
+    .destroy-button {
+        width: 7rem;
+    }
+}
+
+.pagination {
+    padding-left: 2rem;
 }

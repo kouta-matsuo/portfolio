@@ -14,7 +14,13 @@ html {
 }
 
 header {
+  width: 100%;
+  position: fixed;
   background-color: #003366;
+  z-index: 99;
+}
+
+header .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,6 +39,22 @@ header .logout-link {
   text-decoration: none;
 }
 
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .nav li {
+  list-style: none;
+  width: 50%;
+  text-align: center;
+}
+
+header .nav li .nav-link {
+  color: #fff;
+}
+
 .top-nav {
   display: flex;
   flex-direction: column;
@@ -41,6 +63,7 @@ header .logout-link {
   position: relative;
   color: #fff;
   width: 100vw;
+  padding-top: 5rem;
 }
 
 .top-nav img {
@@ -146,11 +169,11 @@ header .logout-link {
   width: 100%;
   width: calc(100% - 4rem);
   margin: 0 auto;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
 .bigfreme:first-child {
-  padding-top: 5rem;
+  padding-top: 14rem;
 }
 
 .bigfreme .freme {
@@ -161,7 +184,19 @@ header .logout-link {
 }
 
 .bigfreme .freme p {
-  padding: 0 0 1rem 2rem;
+  padding: 0 1rem 1rem 0;
+  border-bottom: 0.2rem solid #999999;
+  width: 100%;
+}
+
+.bigfreme .freme .micropost-content {
+  display: flex;
+  width: calc(100% - 2rem);
+}
+
+.bigfreme .freme .micropost-content .title {
+  margin-left: 2rem;
+  width: 35%;
 }
 
 .create-button {
@@ -177,8 +212,25 @@ header .logout-link {
   font-size: 2rem;
 }
 
+.micropost-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.micropost-button .edit-button {
+  width: 7rem;
+}
+
+.micropost-button .destroy-button {
+  width: 7rem;
+}
+
+.pagination {
+  padding-left: 2rem;
+}
+
 .create-form {
-  padding: 2rem 2rem 0;
+  padding: 12rem 2rem 0;
 }
 
 .create-form h2 {
@@ -186,6 +238,14 @@ header .logout-link {
 }
 
 .create-form .form-group {
+  padding-bottom: 2rem;
+}
+
+.edit-form {
+  padding: 12rem 2rem 0;
+}
+
+.edit-form .form-group {
   padding-bottom: 2rem;
 }
 
