@@ -5,11 +5,11 @@
 
 @include('users.nav-tabs')
 
-
-@if(count($microposts) > 0)
-
+<div class="big">
+    @if(count($microposts) > 0)
+    
     @foreach ($microposts as $micropost)
-    <div class="big">
+    
         <div class="bigfreme">
             <div class="freme">
                     <div class="micropost-content">
@@ -47,7 +47,7 @@
         @endforeach
          @else 
         <div class="favorite-less">
-            <p>お気に入りがありません。</p>
+            <p>自分の投稿がありません。</p>
         </div>
         @endif
 {{-- ページネーションのリンク --}}

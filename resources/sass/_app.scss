@@ -13,10 +13,13 @@ $pink: #FF69A3;
 
 html {
     font-size: 62.5%;
+    position: relative;
+    min-height: 100vh;
 }
 
 .container {
     padding: 0;
     margin: 0;
     width: 100vw;
+    margin-bottom: 5rem;
 }

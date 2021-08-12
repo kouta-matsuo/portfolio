@@ -3,14 +3,14 @@
 @section('content')
 
 @include('users.nav-tabs')
-
-@if(count($favorites) > 0 )
+<div class="big">
+    @if(count($favorites) > 0 )
 
 
     
     @foreach($favorites as $favorite)
         @if(Auth::id() != $favorite->user->id)
-        <div class="big">
+        
             <div class="bigfreme">
                 <div class="freme">
                     @if (Auth::user()->is_favorites($favorite->id))

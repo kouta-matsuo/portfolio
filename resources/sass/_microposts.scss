@@ -1,46 +1,46 @@
 //micropostsのスタイル
-
-.bigfreme{
+.bigfreme {
     width: 100%;
     width: calc(100% - 4rem);
     margin: 0 auto;
     padding-bottom: 5rem;
-    
+
     &:first-child {
         padding-top: 12rem;
     }
     
+    
 
-.freme {
-    width: 100%;
-    // border: .1rem solid $blue;
-    border-radius: .5rem;
-     border: .2rem solid $blue;
-    padding: 2rem 0;
-   
-    
-    p {
-        padding: 0 1rem 1rem 0;
-         border-bottom: .2rem solid $gray;
-         width: 100%;
-    }
-    
-    .micropost-content {
-        display: flex;
-        width: calc(100% - 2rem);
-        
-        .title {
-            margin-left: 2rem;
-            width: 35%;
-            
+
+    .freme {
+        width: 100%; // border: .1rem solid $blue;
+        border-radius: .5rem;
+        border: .2rem solid $blue;
+        padding: 2rem 0;
+
+
+        p {
+            padding: 0 1rem 1rem 0;
+            border-bottom: .2rem solid $gray;
+            width: 100%;
+        }
+
+        .micropost-content {
+            display: flex;
+            width: calc(100% - 2rem);
+
+            .title {
+                margin-left: 2rem;
+                width: 35%;
+
+            }
+        }
+
+        form {
+            display: flex;
+            justify-content: flex-end;
         }
     }
-    
-    form {
-        display: flex;
-        justify-content: flex-end;
-    }
-}
 }
 
 .create-button {
@@ -59,11 +59,11 @@
 .micropost-button {
     display: flex;
     justify-content: space-between;
-    
+
     .edit-button {
         width: 7rem;
     }
-    
+
     .destroy-button {
         width: 7rem;
     }
@@ -83,7 +83,7 @@
 //お気に入りのハートの色をお気に入りしているかで分ける
 .unfavorite {
     color: $pink;
-    
+
 }
 
 .favorite-less {
@@ -92,25 +92,25 @@
 }
 
 .nav {
-        
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        top: 5rem;
-        background-color: $blue;
-        width: 100%;
-       
-       
-        
-        li {
-            list-style: none;
-            width: 50%;
-            text-align: center;
-            
-            .nav-link {
-                color: $white;
-            }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 5rem;
+    background-color: $blue;
+    width: 100%;
+
+
+
+    li {
+        list-style: none;
+        width: 50%;
+        text-align: center;
+
+        .nav-link {
+            color: $white;
         }
-        
     }
+
+}

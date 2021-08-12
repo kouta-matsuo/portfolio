@@ -5,12 +5,15 @@
 
 html {
   font-size: 62.5%;
+  position: relative;
+  min-height: 100vh;
 }
 
 .container {
   padding: 0;
   margin: 0;
   width: 100vw;
+  margin-bottom: 5rem;
 }
 
 header {
@@ -78,6 +81,7 @@ header .logout-link {
 .top-content {
   padding: 3rem 2rem 0;
   width: 100vw;
+  margin-bottom: 10rem;
 }
 
 .top-content h2 {
@@ -270,5 +274,18 @@ header .logout-link {
 
 .edit-form .form-group {
   padding-bottom: 2rem;
+}
+
+footer {
+  background-color: #003366;
+  text-align: center;
+  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer small {
+  color: #fff;
 }
 
