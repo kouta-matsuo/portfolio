@@ -19,6 +19,7 @@ html {
 header {
   width: 100%;
   position: fixed;
+  top: 0;
   background-color: #003366;
   z-index: 99;
 }
