@@ -3,9 +3,13 @@
 
 @section('content')
 
+@include('users.nav-tabs')
+
+
 @if(count($microposts) > 0)
 
     @foreach ($microposts as $micropost)
+    <div class="big">
         <div class="bigfreme">
             <div class="freme">
                     <div class="micropost-content">
@@ -39,7 +43,12 @@
             @endif
         </div>
         </div>
+        </div>
         @endforeach
+         @else 
+        <div class="favorite-less">
+            <p>お気に入りがありません。</p>
+        </div>
         @endif
 {{-- ページネーションのリンク --}}
     {{ $microposts->links() }}

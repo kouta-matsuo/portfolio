@@ -23,21 +23,5 @@ header {
         text-decoration: none;
     }
 
-    .nav {
-        
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-        li {
-            list-style: none;
-            width: 50%;
-            text-align: center;
-            
-            .nav-link {
-                color: $white;
-            }
-        }
-        
-    }
+    
 }

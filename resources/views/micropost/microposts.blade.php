@@ -1,10 +1,29 @@
+@include('users.nav-tabs')
 
+<div class="big">
+    @if(count($microposts) > 0)
 
-@if(count($microposts) > 0)
-
-@foreach ($microposts as $micropost)
-    <div class="bigfreme">
-        <div class="freme">
+        @foreach ($microposts as $micropost)
+            <div class="bigfreme">
+                <div class="freme">
+                    {{--お気に入りのボタン--}}
+                       @if(Auth::id() != $micropost->user_id)
+                           @if (Auth::user()->is_favorites($micropost->id))
+                               {{-- お気に入り解除のボタンのフォーム --}}
+                               {!! Form::open(['route' => ['favorites.unfavorite', $micropost->id], 'method' => 'delete']) !!}
+                                   {!! Form::button('<i class="fas fa-heart unfavorite"></i>', ['class' => "btn", 'type' => 'submit']) !!}
+                               {!! Form::close() !!}
+        
+        
+    @else
+        {{-- お気に入り追加のボタンのフォーム --}}
+        {!! Form::open(['route' => ['favorites.favorite', $micropost->id]]) !!}
+            {{--{!! Form::submit('お気に入り', ['class' => "btn btn-secondary "]) !!}--}}
+            {!! Form::button('<i class="fas fa-heart favorite"></i>', ['class' => "btn", 'type' => 'submit']) !!}
+        {!! Form::close() !!}
+    
+@endif
+@endif
             @foreach ($users as $user)
                 @if ($micropost->user_id == $user->id)
                     <div class="micropost-content">
@@ -43,5 +62,6 @@
 {{-- ページネーションのリンク --}}
     {{ $microposts->links() }}
 @endif
+</div>
 {{-- 新規登録ページへのリンク --}}
     {!! link_to_route('microposts.create', '+', [], ['class' => 'btn btn-secondary create-button']) !!}

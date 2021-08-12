@@ -39,22 +39,6 @@ header .logout-link {
   text-decoration: none;
 }
 
-header .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .nav li {
-  list-style: none;
-  width: 50%;
-  text-align: center;
-}
-
-header .nav li .nav-link {
-  color: #fff;
-}
-
 .top-nav {
   display: flex;
   flex-direction: column;
@@ -134,7 +118,7 @@ header .nav li .nav-link {
 }
 
 .text-center {
-  padding-top: 3rem;
+  padding-top: 8rem;
 }
 
 .register-form {
@@ -173,7 +157,7 @@ header .nav li .nav-link {
 }
 
 .bigfreme:first-child {
-  padding-top: 14rem;
+  padding-top: 12rem;
 }
 
 .bigfreme .freme {
@@ -197,6 +181,11 @@ header .nav li .nav-link {
 .bigfreme .freme .micropost-content .title {
   margin-left: 2rem;
   width: 35%;
+}
+
+.bigfreme .freme form {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .create-button {
@@ -227,6 +216,40 @@ header .nav li .nav-link {
 
 .pagination {
   padding-left: 2rem;
+}
+
+.fa-heart {
+  font-size: 2rem;
+  text-align: right;
+}
+
+.unfavorite {
+  color: #FF69A3;
+}
+
+.favorite-less {
+  padding-top: 14rem;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 5rem;
+  background-color: #003366;
+  width: 100%;
+}
+
+.nav li {
+  list-style: none;
+  width: 50%;
+  text-align: center;
+}
+
+.nav li .nav-link {
+  color: #fff;
 }
 
 .create-form {
