@@ -189,6 +189,12 @@ header .logout-link {
   }
 }
 
+@media (min-width: 1024px) {
+  .top-content {
+    padding: 6rem 10rem 0;
+  }
+}
+
 .top-content h2 {
   text-align: center;
 }
