@@ -11,17 +11,34 @@ header {
         align-items: center;
         width: 100%;
         padding: 1rem 2rem;
+        @media(min-width: 769px) {
+            padding: 1rem 5rem;
+        }
     }
 
     .top-logo {
         font-size: 2rem;
         color: $white;
         text-decoration: none;
+        @media(min-width: 769px) {
+            font-size: 2.5rem;
+            transition: .5s;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
     }
 
     .logout-link {
         color: $white;
         text-decoration: none;
+        @media(min-width: 769px) {
+            transition: .5s;
+            font-size: 1.2rem;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
     }
 
     

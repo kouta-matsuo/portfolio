@@ -19,12 +19,12 @@
         
         
         
-        <div class="container">
+        <!--<div class="container">-->
             
             @include('commons.error_messages')
             
             @yield('content')
-        </div>
+        <!--</div>-->
         
         @include('commons.footer')
          

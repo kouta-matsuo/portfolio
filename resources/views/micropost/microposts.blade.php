@@ -11,7 +11,7 @@
                            @if (Auth::user()->is_favorites($micropost->id))
                                {{-- お気に入り解除のボタンのフォーム --}}
                                {!! Form::open(['route' => ['favorites.unfavorite', $micropost->id], 'method' => 'delete']) !!}
-                                   {!! Form::button('<i class="fas fa-heart unfavorite"></i>', ['class' => "btn", 'type' => 'submit']) !!}
+                                   {!! Form::button('<i class="fas fa-heart unfavorite"></i>', ['class' => "btn btn-favorite", 'type' => 'submit']) !!}
                                {!! Form::close() !!}
         
         
@@ -19,7 +19,7 @@
         {{-- お気に入り追加のボタンのフォーム --}}
         {!! Form::open(['route' => ['favorites.favorite', $micropost->id]]) !!}
             {{--{!! Form::submit('お気に入り', ['class' => "btn btn-secondary "]) !!}--}}
-            {!! Form::button('<i class="fas fa-heart favorite"></i>', ['class' => "btn", 'type' => 'submit']) !!}
+            {!! Form::button('<i class="fas fa-heart favorite"></i>', ['class' => "btn btn-favorite", 'type' => 'submit']) !!}
         {!! Form::close() !!}
     
 @endif

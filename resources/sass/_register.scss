@@ -7,9 +7,40 @@
 
 .register-form {
     padding: 0 2rem;
+    @media(min-width: 769px) {
+        padding: 3rem 5rem 0;
+    }
+    
     
     .form-group {
         padding-top: 2rem;
+        @media(min-width: 769px) {
+            display: flex;
+            width: 100%;
+            padding-top: 3rem;
+        }
+        
+        label {
+            @media(min-width: 769px) {
+                width: 50%;
+                text-align: center;
+            }
+        }
+        
+        .form-control {
+            @media(min-width: 769px) {
+                width: 50%;
+            }
+        }
+    }
+    
+    .btn-register {
+        width: 100%;
+        @media(min-width: 769px) {
+            display: block;
+            width: 30%;
+            margin: 0 auto;
+        }
     }
     .last {
         padding-bottom: 2rem;

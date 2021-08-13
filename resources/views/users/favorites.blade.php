@@ -16,7 +16,7 @@
                     @if (Auth::user()->is_favorites($favorite->id))
                         {{-- お気に入り解除のボタンのフォーム --}}
                         {!! Form::open(['route' => ['favorites.unfavorite', $favorite->id], 'method' => 'delete']) !!}
-                            {!! Form::button('<i class="fas fa-heart unfavorite"></i>', ['class' => "btn", 'type' => 'submit']) !!}
+                            {!! Form::button('<i class="fas fa-heart unfavorite"></i>', ['class' => "btn btn-favorite", 'type' => 'submit']) !!}
                         {!! Form::close() !!}
                     @endif
                     <div class="micropost-content">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </div>
-            </div>
+            
         @endif
     @endforeach
     
@@ -50,4 +50,5 @@
         <p>お気に入りがありません。</p>
     </div>
 @endif
+</div>
 @endsection

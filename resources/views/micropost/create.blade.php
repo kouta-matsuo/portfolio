@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="create-form">
-    <h2>新規登録</h2>
+    <h2>新規投稿</h2>
     
     {!! Form::model($micropost, ['route' => 'microposts.store']) !!}
 
@@ -22,7 +22,7 @@
                     {!! Form::textarea('content', null, ['class' => 'form-control']) !!}
                 </div>
 
-                {!! Form::submit('投稿', ['class' => 'btn btn-secondary btn-block store-button']) !!}
+                {!! Form::submit('投稿', ['class' => 'btn btn-primary btn-create']) !!}
 
             {!! Form::close() !!}
 </div>

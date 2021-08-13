@@ -43,7 +43,7 @@
             @endif
         </div>
         </div>
-        </div>
+        
         @endforeach
          @else 
         <div class="favorite-less">
@@ -52,5 +52,5 @@
         @endif
 {{-- ページネーションのリンク --}}
     {{ $microposts->links() }}
-
+</div>
 @endsection

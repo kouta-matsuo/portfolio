@@ -2,14 +2,47 @@
 
 .create-form {
     padding: 12rem 2rem 0;
+    @media(min-width: 769px) {
+        padding: 12rem 5rem 0;
+    }
     
     h2 {
         padding-bottom: 2rem;
+        @media(min-width: 769px) {
+            text-align: center;
+        }
     }
     
     .form-group {
         padding-bottom: 2rem;
+        @media(min-width: 769px) {
+            display: flex;
+            width: 100%;
+            padding-top: 3rem;
+        }
+        
+        label {
+            @media(min-width: 769px) {
+                width: 40%;
+                font-size: 1.2rem;
+                text-align: center;
+            }
+        }
+        
+        .form-control {
+            @media(min-width: 769px) {
+                width: 60%;
+            }
+        }
     }
     
+    .btn-create {
+        width: 100%;
+        @media(min-width: 769px) {
+            display: block;
+            margin: 0 auto;
+            width: 30%;
+        }
+    }
     
 }

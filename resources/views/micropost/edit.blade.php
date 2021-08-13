@@ -3,6 +3,7 @@
 @section('content')
 
 <div class="edit-form">
+    <h2>投稿編集</h2>
     {!! Form::model($micropost, ['route' => ['microposts.update', $micropost->id], 'method' => 'put']) !!}
 
                 <div class="form-group">
@@ -20,7 +21,7 @@
                     {!! Form::textarea('content', null, ['class' => 'form-control']) !!}
                 </div>
 
-                {!! Form::submit('更新', ['class' => 'btn btn-secondary edit-button btn-block']) !!}
+                {!! Form::submit('更新', ['class' => 'btn btn-primary btn-edit']) !!}
 
             {!! Form::close() !!}
 </div>

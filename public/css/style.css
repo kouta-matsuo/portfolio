@@ -7,6 +7,8 @@ html {
   font-size: 62.5%;
   position: relative;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -32,15 +34,43 @@ header .header-top {
   padding: 1rem 2rem;
 }
 
+@media (min-width: 769px) {
+  header .header-top {
+    padding: 1rem 5rem;
+  }
+}
+
 header .top-logo {
   font-size: 2rem;
   color: #fff;
   text-decoration: none;
 }
 
+@media (min-width: 769px) {
+  header .top-logo {
+    font-size: 2.5rem;
+    transition: 0.5s;
+  }
+
+  header .top-logo:hover {
+    transform: scale(1.2);
+  }
+}
+
 header .logout-link {
   color: #fff;
   text-decoration: none;
+}
+
+@media (min-width: 769px) {
+  header .logout-link {
+    transition: 0.5s;
+    font-size: 1.2rem;
+  }
+
+  header .logout-link:hover {
+    transform: scale(1.2);
+  }
 }
 
 .top-nav {
@@ -68,6 +98,18 @@ header .logout-link {
   text-shadow: 0.1rem 0.1rem #003366;
 }
 
+.top-nav .catch h3 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 769px) {
+  .top-nav .catch h3 {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+  }
+}
+
 .top-nav .catch p {
   width: 80%;
   margin: 0 auto;
@@ -75,8 +117,21 @@ header .logout-link {
   padding-bottom: 2rem;
 }
 
+@media (min-width: 769px) {
+  .top-nav .catch p {
+    width: 70%;
+    padding-bottom: 3rem;
+  }
+}
+
 .top-nav .catch .register-button {
   margin-right: 2rem;
+}
+
+@media (min-width: 769px) {
+  .top-nav .catch .register-button {
+    margin-right: 5rem;
+  }
 }
 
 .top-content {
@@ -85,12 +140,30 @@ header .logout-link {
   margin-bottom: 10rem;
 }
 
+@media (min-width: 769px) {
+  .top-content {
+    padding: 6rem 5rem 0;
+  }
+}
+
 .top-content h2 {
   text-align: center;
 }
 
+@media (min-width: 769px) {
+  .top-content h2 {
+    font-size: 2.5rem;
+  }
+}
+
 .top-content .goto {
   padding-top: 3rem;
+}
+
+@media (min-width: 769px) {
+  .top-content .goto {
+    padding-top: 6rem;
+  }
 }
 
 .top-content .goto h3 {
@@ -115,6 +188,13 @@ header .logout-link {
   padding-top: 2rem;
 }
 
+@media (min-width: 769px) {
+  .top-content .goto .section-content p {
+    font-size: 1.2rem;
+    padding-right: 3rem;
+  }
+}
+
 .top-content .goto .section-content img {
   width: 50%;
   height: auto;
@@ -130,8 +210,47 @@ header .logout-link {
   padding: 0 2rem;
 }
 
+@media (min-width: 769px) {
+  .register-form {
+    padding: 3rem 5rem 0;
+  }
+}
+
 .register-form .form-group {
   padding-top: 2rem;
+}
+
+@media (min-width: 769px) {
+  .register-form .form-group {
+    display: flex;
+    width: 100%;
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .register-form .form-group label {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .register-form .form-group .form-control {
+    width: 50%;
+  }
+}
+
+.register-form .btn-register {
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .register-form .btn-register {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+  }
 }
 
 .register-form .last {
@@ -140,10 +259,38 @@ header .logout-link {
 
 .login-form {
   padding: 0 2rem;
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .login-form {
+    padding: 3rem 5rem 0;
+  }
 }
 
 .login-form .form-group {
   padding-top: 2rem;
+}
+
+@media (min-width: 769px) {
+  .login-form .form-group {
+    display: flex;
+    width: 100%;
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .login-form .form-group label {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .login-form .form-group .form-control {
+    width: 50%;
+  }
 }
 
 .login-form .last {
@@ -152,6 +299,24 @@ header .logout-link {
 
 .login-form .register-link {
   padding-top: 2rem;
+}
+
+@media (min-width: 769px) {
+  .login-form .register-link {
+    text-align: center;
+  }
+}
+
+.login-button {
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .login-button {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .bigfreme {
@@ -183,6 +348,12 @@ header .logout-link {
   width: calc(100% - 2rem);
 }
 
+@media (min-width: 769px) {
+  .bigfreme .freme .micropost-content p {
+    font-size: 1.2rem;
+  }
+}
+
 .bigfreme .freme .micropost-content .title {
   margin-left: 2rem;
   width: 35%;
@@ -206,6 +377,18 @@ header .logout-link {
   font-size: 2rem;
 }
 
+@media (min-width: 769px) {
+  .create-button {
+    transition: 0.5s;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .create-button:hover {
+    transform: scale(1.2);
+  }
+}
+
 .micropost-button {
   display: flex;
   justify-content: space-between;
@@ -215,8 +398,28 @@ header .logout-link {
   width: 7rem;
 }
 
+@media (min-width: 769px) {
+  .micropost-button .edit-button {
+    transition: 0.5s;
+  }
+
+  .micropost-button .edit-button:hover {
+    transform: scale(1.2);
+  }
+}
+
 .micropost-button .destroy-button {
   width: 7rem;
+}
+
+@media (min-width: 769px) {
+  .micropost-button .destroy-button {
+    transition: 0.5s;
+  }
+
+  .micropost-button .destroy-button:hover {
+    transform: scale(1.2);
+  }
 }
 
 .pagination {
@@ -230,6 +433,16 @@ header .logout-link {
 
 .unfavorite {
   color: #FF69A3;
+}
+
+.btn-favorite {
+  transition: 0.5s;
+}
+
+@media (min-width: 769px) {
+  .btn-favorite:hover {
+    transform: scale(1.3);
+  }
 }
 
 .favorite-less {
@@ -257,24 +470,142 @@ header .logout-link {
   color: #fff;
 }
 
+@media (min-width: 769px) {
+  .nav li .nav-link {
+    transition: 0.5s;
+    display: inline-block;
+    font-size: 1.2rem;
+  }
+
+  .nav li .nav-link:hover {
+    transform: scale(1.2);
+  }
+}
+
+.big {
+  width: 100vw;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 769px) {
+  .big {
+    padding: 5rem 5rem 10rem;
+  }
+}
+
 .create-form {
   padding: 12rem 2rem 0;
+}
+
+@media (min-width: 769px) {
+  .create-form {
+    padding: 12rem 5rem 0;
+  }
 }
 
 .create-form h2 {
   padding-bottom: 2rem;
 }
 
+@media (min-width: 769px) {
+  .create-form h2 {
+    text-align: center;
+  }
+}
+
 .create-form .form-group {
   padding-bottom: 2rem;
+}
+
+@media (min-width: 769px) {
+  .create-form .form-group {
+    display: flex;
+    width: 100%;
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .create-form .form-group label {
+    width: 40%;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .create-form .form-group .form-control {
+    width: 60%;
+  }
+}
+
+.create-form .btn-create {
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .create-form .btn-create {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+  }
 }
 
 .edit-form {
   padding: 12rem 2rem 0;
 }
 
+@media (min-width: 769px) {
+  .edit-form {
+    padding: 12rem 5rem 0;
+  }
+}
+
+.edit-form h2 {
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 769px) {
+  .edit-form h2 {
+    text-align: center;
+  }
+}
+
 .edit-form .form-group {
   padding-bottom: 2rem;
+}
+
+@media (min-width: 769px) {
+  .edit-form .form-group {
+    display: flex;
+    width: 100%;
+    padding-top: 3rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .edit-form .form-group label {
+    width: 40%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .edit-form .form-group .form-control {
+    width: 60%;
+  }
+}
+
+.edit-form .btn-edit {
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  .edit-form .btn-edit {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 footer {
