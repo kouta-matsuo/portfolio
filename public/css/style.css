@@ -303,7 +303,7 @@ header .logout-link {
 
 @media (min-width: 769px) {
   .register-form .form-group label {
-    width: 40%;
+    width: 50%;
     text-align: center;
     font-size: 1.2rem;
   }
@@ -317,7 +317,7 @@ header .logout-link {
 
 @media (min-width: 769px) {
   .register-form .form-group .form-control {
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -375,7 +375,7 @@ header .logout-link {
 
 @media (min-width: 769px) {
   .login-form .form-group label {
-    width: 40%;
+    width: 50%;
     text-align: center;
     font-size: 1.2rem;
   }
@@ -389,7 +389,7 @@ header .logout-link {
 
 @media (min-width: 769px) {
   .login-form .form-group .form-control {
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -726,7 +726,7 @@ header .logout-link {
 
 @media (min-width: 769px) {
   .create-form .form-group label {
-    width: 40%;
+    width: 50%;
     font-size: 1.2rem;
     text-align: center;
   }
@@ -740,7 +740,7 @@ header .logout-link {
 
 @media (min-width: 769px) {
   .create-form .form-group .form-control {
-    width: 60%;
+    width: 50%;
     font-size: 1.2rem;
   }
 }
@@ -811,7 +811,7 @@ header .logout-link {
 
 @media (min-width: 769px) {
   .edit-form .form-group label {
-    width: 40%;
+    width: 50%;
     text-align: center;
     font-size: 1.2rem;
   }
@@ -825,7 +825,7 @@ header .logout-link {
 
 @media (min-width: 769px) {
   .edit-form .form-group .form-control {
-    width: 60%;
+    width: 50%;
     font-size: 1.2rem;
   }
 }
