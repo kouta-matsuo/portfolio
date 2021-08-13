@@ -24,7 +24,7 @@
 
                 {!! Form::submit('投稿', ['class' => 'btn btn-primary btn-create']) !!}
 
-            {!! Form::close() !!}
+    {!! Form::close() !!}
 </div>
 
 @endsection

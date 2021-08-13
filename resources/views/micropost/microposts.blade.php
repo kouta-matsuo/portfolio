@@ -1,6 +1,8 @@
+<div class="big-content">
+
 @include('users.nav-tabs')
 
-<div class="big">
+    <div class="big">
     @if(count($microposts) > 0)
 
         @foreach ($microposts as $micropost)
@@ -32,10 +34,10 @@
                     </div>
                 @endif
             @endforeach
-             <div class="micropost-content">
-                 <p class="title">都道府県名:</p>
-                 <p>{{ $micropost->from }}</p>
-             </div>
+                <div class="micropost-content">
+                    <p class="title">都道府県名:</p>
+                    <p>{{ $micropost->from }}</p>
+                </div>
              
              <div class="micropost-content">
                  <p class="title">施設名:</p>
@@ -62,6 +64,7 @@
 {{-- ページネーションのリンク --}}
     {{ $microposts->links() }}
 @endif
+</div>
 </div>
 {{-- 新規登録ページへのリンク --}}
     {!! link_to_route('microposts.create', '+', [], ['class' => 'btn btn-secondary create-button']) !!}

@@ -1,12 +1,14 @@
 //loginのスタイル
-
 .login-form {
     padding: 0 2rem;
     width: 100%;
     @media(min-width: 769px) {
         padding: 3rem 5rem 0;
     }
-    
+    @media(min-width: 1024px) {
+        padding: 3rem 10rem 0;
+    }
+
     .form-group {
         padding-top: 2rem;
         @media(min-width: 769px) {
@@ -14,40 +16,49 @@
             width: 100%;
             padding-top: 3rem;
         }
-        
+
         label {
             @media(min-width: 769px) {
-                width: 50%;
+                width: 40%;
                 text-align: center;
+                font-size: 1.2rem;
+            }
+            @media(min-width: 1024px) {
+                font-size: 1.4rem;
             }
         }
-        
+
         .form-control {
             @media(min-width: 769px) {
-                width: 50%;
+                width: 60%;
             }
         }
-        }
-    
-    
+    }
+
+
     .last {
         padding-bottom: 2rem;
     }
-    
+
     .register-link {
         padding-top: 2rem;
         @media(min-width: 769px) {
             text-align: center;
+            font-size: 1.2rem;
         }
     }
 }
 
 .login-button {
-        width: 100%;
-        
-        @media(min-width: 769px) {
-            width: 30%;
-            display: block;
-            margin: 0 auto;
-        }
+    width: 100%;
+
+    @media(min-width: 769px) {
+        width: 30%;
+        display: block;
+        margin: 0 auto;
+        font-size: 1.2rem;
     }
+    @media(min-width: 1024px) {
+        font-size: 1.4rem;
+    }
+}

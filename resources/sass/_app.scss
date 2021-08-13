@@ -5,6 +5,7 @@ $white : #fff;
 $yellow : #FFFF77;
 $gray: #999999;
 $pink: #FF69A3;
+$black: #000;
 
 * {
     margin: 0;
@@ -19,9 +20,10 @@ html {
     padding: 0;
 }
 
-.container {
-    padding: 0;
-    margin: 0;
-    width: 100vw;
-    margin-bottom: 5rem;
+.big-content {
+    @media(min-width: 1024px) {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 10rem;
+    }
 }

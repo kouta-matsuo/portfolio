@@ -1,30 +1,28 @@
 // welcomeのスタイル
-
-
 .top-nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   position: relative;
-   color: $white;
-   width: 100vw;
-   padding-top: 5rem;
-   
+    position: relative;
+    color: $white;
+    width: 100vw;
+    padding-top: 5rem;
+
 
     img {
         width: 100vw;
         height: 50vh;
         object-fit: cover;
     }
-    
-    
+
+
     .catch {
         position: absolute;
         text-align: center;
         font-size: 1.5rem;
         text-shadow: .1rem .1rem $blue;
-        
+
         h3 {
             font-size: 2rem;
             padding-bottom: 1rem;
@@ -32,9 +30,12 @@
                 font-size: 2.5rem;
                 padding-bottom: 2rem;
             }
+            @media(min-width: 1024px) {
+                font-size: 3rem;
+            }
         }
-        
-        
+
+
         p {
             width: 80%;
             margin: 0 auto;
@@ -44,12 +45,27 @@
                 width: 70%;
                 padding-bottom: 3rem;
             }
+            @media(min-width: 1024px) {
+                font-size: 1.5rem;
+            }
         }
-        
+
         .register-button {
             margin-right: 2rem;
             @media(min-width: 769px) {
                 margin-right: 5rem;
+            }
+            @media(min-width: 1024px) {
+                margin-right: 8rem;
+            }
+        }
+
+        .btn {
+            @media(min-width: 769px) {
+                font-size: 1.2rem;
+            }
+            @media(min-width: 1024px) {
+                font-size: 1.4rem;
             }
         }
     }
@@ -63,15 +79,18 @@
     @media(min-width: 769px) {
         padding: 6rem 5rem 0;
     }
-    
+
     h2 {
         text-align: center;
         @media(min-width: 769px) {
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
-        
+        @media(min-width: 1024px) {
+            font-size: 4rem;
+        }
+
     }
-    
+
     .goto {
         padding-top: 3rem;
         @media(min-width: 769px) {
@@ -80,32 +99,38 @@
         h3 {
             display: flex;
             align-items: center;
-            
+            @media(min-width: 769px) {
+                font-size: 2.5rem;
+            }
+
             strong {
-            font-size: 3rem;
-            text-shadow: .1rem .1rem 0 $blue,-.1rem .1rem 0 $blue, .1rem -.1rem 0 $blue,-.1rem -.1rem 0 $blue;
-            color: $yellow;
-            padding-right: 2rem;
+                font-size: 3rem;
+                text-shadow: .1rem .1rem 0 $blue, -.1rem .1rem 0 $blue, .1rem -.1rem 0 $blue, -.1rem -.1rem 0 $blue;
+                color: $yellow;
+                padding-right: 2rem;
             }
         }
-        
+
         .section-content {
             display: flex;
             width: 100%;
             p {
-            width: 50%;
-            padding-top: 2rem;
-            @media(min-width: 769px) {
-                font-size: 1.2rem;
-                padding-right: 3rem;
+                width: 50%;
+                padding-top: 2rem;
+                @media(min-width: 769px) {
+                    font-size: 1.2rem;
+                    padding-right: 3rem;
+                }
+                @media(min-width: 1024px) {
+                    font-size: 1.5rem;
+                }
             }
-        }
-        
-        img {
-            width: 50%;
-            height: auto;
-            object-fit: cover;
-        }
+
+            img {
+                width: 50%;
+                height: auto;
+                object-fit: cover;
+            }
         }
     }
 }

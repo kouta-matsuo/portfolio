@@ -23,7 +23,7 @@
 
                 {!! Form::submit('更新', ['class' => 'btn btn-primary btn-edit']) !!}
 
-            {!! Form::close() !!}
+    {!! Form::close() !!}
 </div>
 
 @endsection

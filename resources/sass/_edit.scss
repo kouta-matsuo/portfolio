@@ -1,19 +1,21 @@
 //editのスタイル
-
-
 .edit-form {
     padding: 12rem 2rem 0;
     @media(min-width: 769px) {
         padding: 12rem 5rem 0;
+        width: 100%;
     }
-    
-     h2 {
+    @media(min-width: 1024px) {
+        padding: 12rem 10rem 0;
+    }
+
+    h2 {
         padding-bottom: 2rem;
         @media(min-width: 769px) {
             text-align: center;
         }
     }
-    
+
     .form-group {
         padding-bottom: 2rem;
         @media(min-width: 769px) {
@@ -21,27 +23,39 @@
             width: 100%;
             padding-top: 3rem;
         }
-        
+
         label {
             @media(min-width: 769px) {
                 width: 40%;
                 text-align: center;
+                font-size: 1.2rem;
+            }
+            @media(min-width: 1024px) {
+                font-size: 1.4rem;
             }
         }
-        
+
         .form-control {
             @media(min-width: 769px) {
                 width: 60%;
+                font-size: 1.2rem;
+            }
+            @media(min-width: 1024px) {
+                font-size: 1.4rem;
             }
         }
     }
-    
+
     .btn-edit {
         width: 100%;
         @media(min-width: 769px) {
             width: 30%;
             display: block;
             margin: 0 auto;
+            font-size: 1.2rem;
+        }
+        @media(min-width: 1024px) {
+            font-size: 1.4rem;
         }
     }
 }
