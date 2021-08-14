@@ -19,15 +19,14 @@
     .form-group {
         padding-bottom: 2rem;
         @media(min-width: 769px) {
-            display: flex;
-            width: 100%;
+            width: 50%;
             padding-top: 3rem;
+            margin: 0 auto;
         }
 
         label {
             @media(min-width: 769px) {
                 width: 50%;
-                text-align: center;
                 font-size: 1.2rem;
             }
             @media(min-width: 1024px) {
@@ -37,7 +36,6 @@
 
         .form-control {
             @media(min-width: 769px) {
-                width: 50%;
                 font-size: 1.2rem;
             }
             @media(min-width: 1024px) {
@@ -51,7 +49,7 @@
         @media(min-width: 769px) {
             width: 30%;
             display: block;
-            margin: 0 auto;
+            margin: 2rem auto 0;
             font-size: 1.2rem;
         }
         @media(min-width: 1024px) {

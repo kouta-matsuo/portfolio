@@ -302,8 +302,9 @@ header .logout-link {
 @media (min-width: 769px) {
   .register-form .form-group {
     display: flex;
-    width: 100%;
-    padding-top: 3rem;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
   }
 }
 
@@ -321,12 +322,6 @@ header .logout-link {
   }
 }
 
-@media (min-width: 769px) {
-  .register-form .form-group .form-control {
-    width: 50%;
-  }
-}
-
 .register-form .btn-register {
   width: 100%;
 }
@@ -335,7 +330,7 @@ header .logout-link {
   .register-form .btn-register {
     display: block;
     width: 30%;
-    margin: 0 auto;
+    margin: 2rem auto 0;
     font-size: 1.2rem;
   }
 }
@@ -374,8 +369,9 @@ header .logout-link {
 @media (min-width: 769px) {
   .login-form .form-group {
     display: flex;
-    width: 100%;
-    padding-top: 3rem;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
   }
 }
 
@@ -390,12 +386,6 @@ header .logout-link {
 @media (min-width: 1024px) {
   .login-form .form-group label {
     font-size: 1.4rem;
-  }
-}
-
-@media (min-width: 769px) {
-  .login-form .form-group .form-control {
-    width: 50%;
   }
 }
 
@@ -424,6 +414,7 @@ header .logout-link {
     display: block;
     margin: 0 auto;
     font-size: 1.2rem;
+    margin-top: 2rem;
   }
 }
 
@@ -724,17 +715,15 @@ header .logout-link {
 
 @media (min-width: 769px) {
   .create-form .form-group {
-    display: flex;
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
     padding-top: 3rem;
   }
 }
 
 @media (min-width: 769px) {
   .create-form .form-group label {
-    width: 50%;
     font-size: 1.2rem;
-    text-align: center;
   }
 }
 
@@ -746,7 +735,6 @@ header .logout-link {
 
 @media (min-width: 769px) {
   .create-form .form-group .form-control {
-    width: 50%;
     font-size: 1.2rem;
   }
 }
@@ -764,7 +752,7 @@ header .logout-link {
 @media (min-width: 769px) {
   .create-form .btn-create {
     display: block;
-    margin: 0 auto;
+    margin: 2rem auto 0;
     width: 30%;
     font-size: 1.2rem;
   }
@@ -809,16 +797,15 @@ header .logout-link {
 
 @media (min-width: 769px) {
   .edit-form .form-group {
-    display: flex;
-    width: 100%;
+    width: 50%;
     padding-top: 3rem;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 769px) {
   .edit-form .form-group label {
     width: 50%;
-    text-align: center;
     font-size: 1.2rem;
   }
 }
@@ -831,7 +818,6 @@ header .logout-link {
 
 @media (min-width: 769px) {
   .edit-form .form-group .form-control {
-    width: 50%;
     font-size: 1.2rem;
   }
 }
@@ -850,7 +836,7 @@ header .logout-link {
   .edit-form .btn-edit {
     width: 30%;
     display: block;
-    margin: 0 auto;
+    margin: 2rem auto 0;
     font-size: 1.2rem;
   }
 }
