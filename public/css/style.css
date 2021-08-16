@@ -94,7 +94,7 @@ header .logout-link {
   align-items: center;
   position: relative;
   color: #fff;
-  width: 100vw;
+  width: 100%;
   padding-top: 5rem;
 }
 
