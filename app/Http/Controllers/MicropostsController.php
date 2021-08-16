@@ -83,7 +83,7 @@ class MicropostsController extends Controller
             ]);
         }
         else {
-            return redirect('/');
+            return view('welcome');
         }
     }
 

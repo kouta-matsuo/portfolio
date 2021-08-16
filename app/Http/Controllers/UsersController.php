@@ -15,9 +15,12 @@ class UsersController extends Controller
     //お気に入り一覧ページを表示するアクション
     
     public function favorites($id) {
+        
+        
         //idの値で投稿を検索して取得
         $user = User::findOrFail($id);
         
+        if(\Auth::id() == $user->id) {
         
         $micropost = new Micropost;
         
@@ -34,6 +37,8 @@ class UsersController extends Controller
             'favorites' =>$favorites,
             'micropost' =>$micropost,
             ]);
-        
+        }else {
+            return view('welcome');
+        }
     }
 }
