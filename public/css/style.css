@@ -266,8 +266,8 @@ header .logout-link {
 .top-content .goto .section-content img {
   width: 50%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .text-center {
