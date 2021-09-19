@@ -1,5 +1,5 @@
 //footerのスタイル
-footer {
+.footer {
     background-color: $blue;
     text-align: center;
     padding: 1rem 0;
@@ -7,7 +7,7 @@ footer {
     bottom: 0;
     width: 100%;
 
-    small {
+    &__copy {
         color: $white;
         @media(min-width: 769px) {
             font-size: 1.2rem;

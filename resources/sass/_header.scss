@@ -15,9 +15,9 @@ header {
             padding: 1rem 5rem;
         }
 
-    }
+   
 
-    .top-logo {
+    &__logo {
         font-size: 2rem;
         color: $white;
         text-decoration: none;
@@ -33,7 +33,7 @@ header {
         }
     }
 
-    .logout-link {
+    &__btn-logout {
         color: $white;
         text-decoration: none;
         @media(min-width: 769px) {
@@ -47,6 +47,6 @@ header {
             font-size: 1.4rem;
         }
     }
-
+}
 
 }

@@ -27,7 +27,6 @@ header {
   background-color: #003366;
   z-index: 99;
 }
-
 header .header-top {
   display: flex;
   justify-content: space-between;
@@ -35,54 +34,45 @@ header .header-top {
   width: 100%;
   padding: 1rem 2rem;
 }
-
 @media (min-width: 769px) {
   header .header-top {
     padding: 1rem 5rem;
   }
 }
-
-header .top-logo {
+header .header-top__logo {
   font-size: 2rem;
   color: #fff;
   text-decoration: none;
 }
-
 @media (min-width: 769px) {
-  header .top-logo {
+  header .header-top__logo {
     font-size: 2.5rem;
     transition: 0.5s;
   }
-
-  header .top-logo:hover {
+  header .header-top__logo:hover {
     transform: scale(1.2);
   }
 }
-
 @media (min-width: 1024px) {
-  header .top-logo {
+  header .header-top__logo {
     font-size: 3rem;
   }
 }
-
-header .logout-link {
+header .header-top__btn-logout {
   color: #fff;
   text-decoration: none;
 }
-
 @media (min-width: 769px) {
-  header .logout-link {
+  header .header-top__btn-logout {
     transition: 0.5s;
     font-size: 1.2rem;
   }
-
-  header .logout-link:hover {
+  header .header-top__btn-logout:hover {
     transform: scale(1.2);
   }
 }
-
 @media (min-width: 1024px) {
-  header .logout-link {
+  header .header-top__btn-logout {
     font-size: 1.4rem;
   }
 }
@@ -97,184 +87,153 @@ header .logout-link {
   width: 100%;
   padding-top: 5rem;
 }
-
-.top-nav img {
+.top-nav__img {
   width: 100%;
   height: 50vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-
-.top-nav .catch {
+.top-nav__catch {
   position: absolute;
   text-align: center;
   font-size: 1.5rem;
   text-shadow: 0.1rem 0.1rem #003366;
 }
-
-.top-nav .catch h3 {
+.top-nav__catch__heading {
   font-size: 2rem;
   padding-bottom: 1rem;
 }
-
 @media (min-width: 769px) {
-  .top-nav .catch h3 {
+  .top-nav__catch__heading {
     font-size: 2.5rem;
     padding-bottom: 2rem;
   }
 }
-
 @media (min-width: 1024px) {
-  .top-nav .catch h3 {
+  .top-nav__catch__heading {
     font-size: 3rem;
   }
 }
-
-.top-nav .catch p {
+.top-nav__catch__text {
   width: 80%;
   margin: 0 auto;
   text-align: justify;
   padding-bottom: 2rem;
 }
-
 @media (min-width: 769px) {
-  .top-nav .catch p {
+  .top-nav__catch__text {
     width: 70%;
     padding-bottom: 3rem;
   }
 }
-
 @media (min-width: 1024px) {
-  .top-nav .catch p {
+  .top-nav__catch__text {
     font-size: 1.5rem;
   }
 }
-
-.top-nav .catch .register-button {
+.top-nav__catch__btn--register {
   margin-right: 2rem;
 }
-
 @media (min-width: 769px) {
-  .top-nav .catch .register-button {
+  .top-nav__catch__btn--register {
     margin-right: 5rem;
   }
 }
-
 @media (min-width: 1024px) {
-  .top-nav .catch .register-button {
+  .top-nav__catch__btn--register {
     margin-right: 8rem;
   }
 }
-
 @media (min-width: 769px) {
-  .top-nav .catch .btn {
+  .top-nav__catch__btn {
     font-size: 1.2rem;
   }
 }
-
 @media (min-width: 1024px) {
-  .top-nav .catch .btn {
+  .top-nav__catch__btn {
     font-size: 1.4rem;
   }
 }
 
-.top-content {
+.top-container {
   padding: 3rem 2rem 0;
   width: 100%;
   margin-bottom: 10rem;
 }
-
 @media (min-width: 769px) {
-  .top-content {
+  .top-container {
     padding: 6rem 5rem 0;
   }
 }
-
 @media (min-width: 1024px) {
-  .top-content {
+  .top-container {
     padding: 6rem 10rem 0;
   }
 }
-
-.top-content h2 {
+.top-container__heading {
   text-align: center;
 }
-
 @media (min-width: 769px) {
-  .top-content h2 {
+  .top-container__heading {
     font-size: 3rem;
   }
 }
-
 @media (min-width: 1024px) {
-  .top-content h2 {
+  .top-container__heading {
     font-size: 4rem;
   }
 }
-
-.top-content .goto {
+.top-container__point {
   padding-top: 3rem;
 }
-
 @media (min-width: 769px) {
-  .top-content .goto {
+  .top-container__point {
     padding-top: 6rem;
   }
 }
-
-.top-content .goto h3 {
+.top-container__point__heading {
   display: flex;
   align-items: center;
 }
-
 @media (min-width: 769px) {
-  .top-content .goto h3 {
+  .top-container__point__heading {
     font-size: 2.5rem;
   }
 }
-
-.top-content .goto h3 strong {
+.top-container__point__heading--number {
   font-size: 3rem;
   text-shadow: 0.1rem 0.1rem 0 #003366, -0.1rem 0.1rem 0 #003366, 0.1rem -0.1rem 0 #003366, -0.1rem -0.1rem 0 #003366;
   color: #FFFF77;
   padding-right: 2rem;
 }
-
-.top-content .goto .section-content {
+.top-container__point__box {
   display: flex;
   align-items: center;
   width: 100%;
 }
-
-.top-content .goto .section-content p {
+.top-container__point__box__text {
   width: 50%;
   padding-right: 2rem;
 }
-
 @media (min-width: 769px) {
-  .top-content .goto .section-content p {
+  .top-container__point__box__text {
     font-size: 1.2rem;
     padding-right: 3rem;
   }
 }
-
 @media (min-width: 1024px) {
-  .top-content .goto .section-content p {
+  .top-container__point__box__text {
     font-size: 1.5rem;
   }
 }
-
-.top-content .goto .section-content img {
+.top-container__point__box__img {
   width: 50%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .text-center {
   padding-top: 8rem;
 }
-
 @media (min-width: 769px) {
   .text-center {
     padding-top: 10rem;
@@ -284,23 +243,19 @@ header .logout-link {
 .register-form {
   padding: 0 2rem;
 }
-
 @media (min-width: 769px) {
   .register-form {
     padding: 3rem 5rem 0;
   }
 }
-
 @media (min-width: 1024px) {
   .register-form {
     padding: 3rem 10rem 0;
   }
 }
-
 .register-form .form-group {
   padding-top: 2rem;
 }
-
 @media (min-width: 769px) {
   .register-form .form-group {
     display: flex;
@@ -309,7 +264,6 @@ header .logout-link {
     padding-bottom: 3rem;
   }
 }
-
 @media (min-width: 769px) {
   .register-form .form-group label {
     width: 50%;
@@ -317,17 +271,14 @@ header .logout-link {
     font-size: 1.2rem;
   }
 }
-
 @media (min-width: 1024px) {
   .register-form .form-group label {
     font-size: 1.4rem;
   }
 }
-
 .register-form .btn-register {
   width: 100%;
 }
-
 @media (min-width: 769px) {
   .register-form .btn-register {
     display: block;
@@ -336,13 +287,11 @@ header .logout-link {
     font-size: 1.2rem;
   }
 }
-
 @media (min-width: 1024px) {
   .register-form .btn-register {
     font-size: 1.4rem;
   }
 }
-
 .register-form .last {
   padding-bottom: 2rem;
 }
@@ -351,23 +300,19 @@ header .logout-link {
   padding: 0 2rem;
   width: 100%;
 }
-
 @media (min-width: 769px) {
   .login-form {
     padding: 3rem 5rem 0;
   }
 }
-
 @media (min-width: 1024px) {
   .login-form {
     padding: 3rem 10rem 0;
   }
 }
-
 .login-form .form-group {
   padding-top: 2rem;
 }
-
 @media (min-width: 769px) {
   .login-form .form-group {
     display: flex;
@@ -376,7 +321,6 @@ header .logout-link {
     padding-bottom: 3rem;
   }
 }
-
 @media (min-width: 769px) {
   .login-form .form-group label {
     width: 50%;
@@ -384,21 +328,17 @@ header .logout-link {
     font-size: 1.2rem;
   }
 }
-
 @media (min-width: 1024px) {
   .login-form .form-group label {
     font-size: 1.4rem;
   }
 }
-
 .login-form .last {
   padding-bottom: 2rem;
 }
-
 .login-form .register-link {
   padding-top: 2rem;
 }
-
 @media (min-width: 769px) {
   .login-form .register-link {
     text-align: center;
@@ -409,7 +349,6 @@ header .logout-link {
 .login-button {
   width: 100%;
 }
-
 @media (min-width: 769px) {
   .login-button {
     width: 30%;
@@ -419,7 +358,6 @@ header .logout-link {
     margin-top: 2rem;
   }
 }
-
 @media (min-width: 1024px) {
   .login-button {
     font-size: 1.4rem;
@@ -432,52 +370,43 @@ header .logout-link {
   margin: 0 auto;
   padding-bottom: 5rem;
 }
-
 @media (min-width: 1024px) {
   .bigfreme {
     margin: 0;
   }
 }
-
 .bigfreme:first-child {
   padding-top: 12rem;
 }
-
 .bigfreme .freme {
   width: 100%;
   border-radius: 0.5rem;
   border: 0.2rem solid #003366;
   padding: 2rem 0;
 }
-
 .bigfreme .freme p {
   padding: 0 1rem 1rem 0;
   border-bottom: 0.2rem solid #999999;
   width: 100%;
 }
-
 .bigfreme .freme .micropost-content {
   display: flex;
   width: calc(100% - 2rem);
 }
-
 @media (min-width: 769px) {
   .bigfreme .freme .micropost-content p {
     font-size: 1.2rem;
   }
 }
-
 @media (min-width: 1024px) {
   .bigfreme .freme .micropost-content p {
     font-size: 1.4rem;
   }
 }
-
 .bigfreme .freme .micropost-content .title {
   margin-left: 2rem;
   width: 35%;
 }
-
 .bigfreme .freme form {
   display: flex;
   justify-content: flex-end;
@@ -495,7 +424,6 @@ header .logout-link {
   height: 4rem;
   font-size: 2rem;
 }
-
 @media (min-width: 769px) {
   .create-button {
     transition: 0.5s;
@@ -503,12 +431,10 @@ header .logout-link {
     height: 5rem;
     font-size: 2.5rem;
   }
-
   .create-button:hover {
     transform: scale(1.2);
   }
 }
-
 @media (min-width: 1024px) {
   .create-button {
     right: 10rem;
@@ -522,46 +448,38 @@ header .logout-link {
   display: flex;
   justify-content: space-between;
 }
-
 .micropost-button .edit-button {
   width: 7rem;
 }
-
 @media (min-width: 769px) {
   .micropost-button .edit-button {
     transition: 0.5s;
     font-size: 1.2rem;
     width: 8.5rem;
   }
-
   .micropost-button .edit-button:hover {
     transform: scale(1.2);
   }
 }
-
 @media (min-width: 1024px) {
   .micropost-button .edit-button {
     font-size: 1.4rem;
     width: 10rem;
   }
 }
-
 .micropost-button .destroy-button {
   width: 7rem;
 }
-
 @media (min-width: 769px) {
   .micropost-button .destroy-button {
     transition: 0.5s;
     font-size: 1.2rem;
     width: 8.5rem;
   }
-
   .micropost-button .destroy-button:hover {
     transform: scale(1.2);
   }
 }
-
 @media (min-width: 1024px) {
   .micropost-button .destroy-button {
     font-size: 1.4rem;
@@ -577,7 +495,6 @@ header .logout-link {
   font-size: 2rem;
   text-align: right;
 }
-
 @media (min-width: 769px) {
   .fa-heart {
     font-size: 3rem;
@@ -591,7 +508,6 @@ header .logout-link {
 .btn-favorite {
   transition: 0.5s;
 }
-
 @media (min-width: 769px) {
   .btn-favorite:hover {
     transform: scale(1.3);
@@ -602,13 +518,11 @@ header .logout-link {
   padding-top: 14rem;
   text-align: center;
 }
-
 @media (min-width: 769px) {
   .favorite-less {
     font-size: 1.2rem;
   }
 }
-
 @media (min-width: 1024px) {
   .favorite-less {
     font-size: 1.4rem;
@@ -624,7 +538,6 @@ header .logout-link {
   background-color: #003366;
   width: 100%;
 }
-
 @media (min-width: 1024px) {
   .nav {
     position: static;
@@ -634,13 +547,11 @@ header .logout-link {
     padding: 17rem 5rem 0 0;
   }
 }
-
 .nav li {
   list-style: none;
   width: 50%;
   text-align: center;
 }
-
 @media (min-width: 1024px) {
   .nav li {
     width: 100%;
@@ -648,23 +559,19 @@ header .logout-link {
     text-align: center;
   }
 }
-
 .nav li .nav-link {
   color: #fff;
 }
-
 @media (min-width: 769px) {
   .nav li .nav-link {
     transition: 0.5s;
     display: inline-block;
     font-size: 1.2rem;
   }
-
   .nav li .nav-link:hover {
     transform: scale(1.2);
   }
 }
-
 @media (min-width: 1024px) {
   .nav li .nav-link {
     color: #000;
@@ -677,7 +584,6 @@ header .logout-link {
   width: 100vw;
   padding-bottom: 5rem;
 }
-
 @media (min-width: 769px) {
   .big {
     padding: 5rem 5rem 10rem;
@@ -687,34 +593,28 @@ header .logout-link {
 .create-form {
   padding: 12rem 2rem 0;
 }
-
 @media (min-width: 769px) {
   .create-form {
     padding: 12rem 5rem 0;
     width: 100%;
   }
 }
-
 @media (min-width: 1024px) {
   .create-form {
     padding: 12rem 10rem 0;
   }
 }
-
 .create-form h2 {
   padding-bottom: 2rem;
 }
-
 @media (min-width: 769px) {
   .create-form h2 {
     text-align: center;
   }
 }
-
 .create-form .form-group {
   padding-bottom: 2rem;
 }
-
 @media (min-width: 769px) {
   .create-form .form-group {
     width: 50%;
@@ -722,35 +622,29 @@ header .logout-link {
     padding-top: 3rem;
   }
 }
-
 @media (min-width: 769px) {
   .create-form .form-group label {
     font-size: 1.2rem;
   }
 }
-
 @media (min-width: 1024px) {
   .create-form .form-group label {
     font-size: 1.4rem;
   }
 }
-
 @media (min-width: 769px) {
   .create-form .form-group .form-control {
     font-size: 1.2rem;
   }
 }
-
 @media (min-width: 1024px) {
   .create-form .form-group .form-control {
     font-size: 1.4rem;
   }
 }
-
 .create-form .btn-create {
   width: 100%;
 }
-
 @media (min-width: 769px) {
   .create-form .btn-create {
     display: block;
@@ -759,7 +653,6 @@ header .logout-link {
     font-size: 1.2rem;
   }
 }
-
 @media (min-width: 1024px) {
   .create-form .btn-create {
     font-size: 1.4rem;
@@ -769,34 +662,28 @@ header .logout-link {
 .edit-form {
   padding: 12rem 2rem 0;
 }
-
 @media (min-width: 769px) {
   .edit-form {
     padding: 12rem 5rem 0;
     width: 100%;
   }
 }
-
 @media (min-width: 1024px) {
   .edit-form {
     padding: 12rem 10rem 0;
   }
 }
-
 .edit-form h2 {
   padding-bottom: 2rem;
 }
-
 @media (min-width: 769px) {
   .edit-form h2 {
     text-align: center;
   }
 }
-
 .edit-form .form-group {
   padding-bottom: 2rem;
 }
-
 @media (min-width: 769px) {
   .edit-form .form-group {
     width: 50%;
@@ -804,36 +691,30 @@ header .logout-link {
     margin: 0 auto;
   }
 }
-
 @media (min-width: 769px) {
   .edit-form .form-group label {
     width: 50%;
     font-size: 1.2rem;
   }
 }
-
 @media (min-width: 1024px) {
   .edit-form .form-group label {
     font-size: 1.4rem;
   }
 }
-
 @media (min-width: 769px) {
   .edit-form .form-group .form-control {
     font-size: 1.2rem;
   }
 }
-
 @media (min-width: 1024px) {
   .edit-form .form-group .form-control {
     font-size: 1.4rem;
   }
 }
-
 .edit-form .btn-edit {
   width: 100%;
 }
-
 @media (min-width: 769px) {
   .edit-form .btn-edit {
     width: 30%;
@@ -842,14 +723,13 @@ header .logout-link {
     font-size: 1.2rem;
   }
 }
-
 @media (min-width: 1024px) {
   .edit-form .btn-edit {
     font-size: 1.4rem;
   }
 }
 
-footer {
+.footer {
   background-color: #003366;
   text-align: center;
   padding: 1rem 0;
@@ -857,14 +737,13 @@ footer {
   bottom: 0;
   width: 100%;
 }
-
-footer small {
+.footer__copy {
   color: #fff;
 }
-
 @media (min-width: 769px) {
-  footer small {
+  .footer__copy {
     font-size: 1.2rem;
   }
 }
 
+/*# sourceMappingURL=style.css.map */
