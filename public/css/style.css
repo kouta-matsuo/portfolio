@@ -58,21 +58,21 @@ header .header-top__logo {
     font-size: 3rem;
   }
 }
-header .header-top__btn-logout {
+header .header-top__btn--logout {
   color: #fff;
   text-decoration: none;
 }
 @media (min-width: 769px) {
-  header .header-top__btn-logout {
+  header .header-top__btn--logout {
     transition: 0.5s;
     font-size: 1.2rem;
   }
-  header .header-top__btn-logout:hover {
+  header .header-top__btn--logout:hover {
     transform: scale(1.2);
   }
 }
 @media (min-width: 1024px) {
-  header .header-top__btn-logout {
+  header .header-top__btn--logout {
     font-size: 1.4rem;
   }
 }
@@ -543,49 +543,49 @@ header .header-top__btn-logout {
     padding: 12rem 10rem 0;
   }
 }
-.create-form h2 {
+.create-form__heading {
   padding-bottom: 2rem;
 }
 @media (min-width: 769px) {
-  .create-form h2 {
+  .create-form__heading {
     text-align: center;
   }
 }
-.create-form .form-group {
+.create-form__form-group {
   padding-bottom: 2rem;
 }
 @media (min-width: 769px) {
-  .create-form .form-group {
+  .create-form__form-group {
     width: 50%;
     margin: 0 auto;
     padding-top: 3rem;
   }
 }
 @media (min-width: 769px) {
-  .create-form .form-group label {
+  .create-form__form-group__label {
     font-size: 1.2rem;
   }
 }
 @media (min-width: 1024px) {
-  .create-form .form-group label {
+  .create-form__form-group__label {
     font-size: 1.4rem;
   }
 }
 @media (min-width: 769px) {
-  .create-form .form-group .form-control {
+  .create-form__form-group__form-area {
     font-size: 1.2rem;
   }
 }
 @media (min-width: 1024px) {
-  .create-form .form-group .form-control {
+  .create-form__form-group__form-area {
     font-size: 1.4rem;
   }
 }
-.create-form .btn-create {
+.create-form__create-btn {
   width: 100%;
 }
 @media (min-width: 769px) {
-  .create-form .btn-create {
+  .create-form__create-btn {
     display: block;
     margin: 2rem auto 0;
     width: 30%;
@@ -593,7 +593,7 @@ header .header-top__btn-logout {
   }
 }
 @media (min-width: 1024px) {
-  .create-form .btn-create {
+  .create-form__create-btn {
     font-size: 1.4rem;
   }
 }
