@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="register-top">
+<div class="top-heading">
     <h1 class="register-top__heading">新規登録</h1>
 </div>
 

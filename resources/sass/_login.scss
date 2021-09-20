@@ -9,7 +9,7 @@
         padding: 3rem 10rem 0;
     }
 
-    .form-group {
+    &__form-group {
         padding-top: 2rem;
         @media(min-width: 769px) {
             display: flex;
@@ -17,8 +17,11 @@
             margin: 0 auto;
             padding-bottom: 3rem;
         }
+        &--padding {
+            padding-bottom: 2rem;
+        }
 
-        label {
+        &__label {
             @media(min-width: 769px) {
                 width: 50%;
                 text-align: center;
@@ -29,35 +32,33 @@
             }
         }
 
-        
-        
+
+
     }
 
 
-    .last {
-        padding-bottom: 2rem;
-    }
 
-    .register-link {
+    &__register-link {
         padding-top: 2rem;
         @media(min-width: 769px) {
             text-align: center;
             font-size: 1.2rem;
         }
     }
-}
 
-.login-button {
-    width: 100%;
 
-    @media(min-width: 769px) {
-        width: 30%;
-        display: block;
-        margin: 0 auto;
-        font-size: 1.2rem;
-        margin-top: 2rem;
-    }
-    @media(min-width: 1024px) {
-        font-size: 1.4rem;
+    &__btn {
+        width: 100%;
+
+        @media(min-width: 769px) {
+            width: 30%;
+            display: block;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
+        @media(min-width: 1024px) {
+            font-size: 1.4rem;
+        }
     }
 }
