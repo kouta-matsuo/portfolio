@@ -231,11 +231,12 @@ header .header-top__btn-logout {
   object-fit: contain;
 }
 
-.text-center {
+.register-top {
   padding-top: 8rem;
+  text-align: center;
 }
 @media (min-width: 769px) {
-  .text-center {
+  .register-top {
     padding-top: 10rem;
   }
 }
@@ -253,34 +254,37 @@ header .header-top__btn-logout {
     padding: 3rem 10rem 0;
   }
 }
-.register-form .form-group {
+.register-form__form-group {
   padding-top: 2rem;
 }
 @media (min-width: 769px) {
-  .register-form .form-group {
+  .register-form__form-group {
     display: flex;
     width: 50%;
     margin: 0 auto;
     padding-bottom: 3rem;
   }
 }
+.register-form__form-group--padding {
+  padding-bottom: 2rem;
+}
 @media (min-width: 769px) {
-  .register-form .form-group label {
+  .register-form__form-group__label {
     width: 50%;
     text-align: center;
     font-size: 1.2rem;
   }
 }
 @media (min-width: 1024px) {
-  .register-form .form-group label {
+  .register-form__form-group__label {
     font-size: 1.4rem;
   }
 }
-.register-form .btn-register {
+.register-form__btn {
   width: 100%;
 }
 @media (min-width: 769px) {
-  .register-form .btn-register {
+  .register-form__btn {
     display: block;
     width: 30%;
     margin: 2rem auto 0;
@@ -288,12 +292,9 @@ header .header-top__btn-logout {
   }
 }
 @media (min-width: 1024px) {
-  .register-form .btn-register {
+  .register-form__btn {
     font-size: 1.4rem;
   }
-}
-.register-form .last {
-  padding-bottom: 2rem;
 }
 
 .login-form {
