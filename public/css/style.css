@@ -741,6 +741,9 @@ header .header-top__btn--logout {
     position: fixed;
     color: #000;
   }
+  .nav__lists__list__link:hover {
+    color: #000;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

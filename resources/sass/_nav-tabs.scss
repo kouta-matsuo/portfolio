@@ -41,16 +41,18 @@
                     transform: scale(1.2);
                     color: $white;
                 }
-
             }
+
             @media(min-width: 1024px) {
                 font-size: 1.4rem;
                 position: fixed;
                 color: $black;
-                
+                &:hover {
+                    color: $black;
 
+                }
             }
         }
-    }
 
+    }
 }
