@@ -612,50 +612,50 @@ header .header-top__btn--logout {
     padding: 12rem 10rem 0;
   }
 }
-.edit-form h2 {
+.edit-form__heading {
   padding-bottom: 2rem;
 }
 @media (min-width: 769px) {
-  .edit-form h2 {
+  .edit-form__heading {
     text-align: center;
   }
 }
-.edit-form .form-group {
+.edit-form__form-group {
   padding-bottom: 2rem;
 }
 @media (min-width: 769px) {
-  .edit-form .form-group {
+  .edit-form__form-group {
     width: 50%;
     padding-top: 3rem;
     margin: 0 auto;
   }
 }
 @media (min-width: 769px) {
-  .edit-form .form-group label {
+  .edit-form__form-group__label {
     width: 50%;
     font-size: 1.2rem;
   }
 }
 @media (min-width: 1024px) {
-  .edit-form .form-group label {
+  .edit-form__form-group__label {
     font-size: 1.4rem;
   }
 }
 @media (min-width: 769px) {
-  .edit-form .form-group .form-control {
+  .edit-form__form-group__form-areal {
     font-size: 1.2rem;
   }
 }
 @media (min-width: 1024px) {
-  .edit-form .form-group .form-control {
+  .edit-form__form-group__form-areal {
     font-size: 1.4rem;
   }
 }
-.edit-form .btn-edit {
+.edit-form__edit-btn {
   width: 100%;
 }
 @media (min-width: 769px) {
-  .edit-form .btn-edit {
+  .edit-form__edit-btn {
     width: 30%;
     display: block;
     margin: 2rem auto 0;
@@ -663,7 +663,7 @@ header .header-top__btn--logout {
   }
 }
 @media (min-width: 1024px) {
-  .edit-form .btn-edit {
+  .edit-form__edit-btn {
     font-size: 1.4rem;
   }
 }
