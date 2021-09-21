@@ -8,18 +8,18 @@
     {!! Form::model($micropost, ['route' => 'microposts.store']) !!}
 
                 <div class="create-form__form-group">
-                    {!! Form::label('from', '都道府県:',['class' => "create-form__form-group__label"]) !!}
-                    {!! Form::text('from', null, ['class' => 'create-form__form-group__form-area form-control']) !!}
+                    {!! Form::label('from', '都道府県:',['class' => "create-form__form-group-label"]) !!}
+                    {!! Form::text('from', null, ['class' => 'create-form__form-group-form-area form-control']) !!}
                 </div>
                 
                 <div class="create-form__form-group">
-                    {!! Form::label('facility', '施設名:',['class' => "create-form__form-group__label"]) !!}
-                    {!! Form::text('facility', null, ['class' => 'create-form__form-group__form-area form-control']) !!}
+                    {!! Form::label('facility', '施設名:',['class' => "create-form__form-group-label"]) !!}
+                    {!! Form::text('facility', null, ['class' => 'create-form__form-group-form-area form-control']) !!}
                 </div>
                     
                 <div class="create-form__form-group">    
-                    {!! Form::label('content', '説明:',['class' => "create-form__form-group__label"]) !!}
-                    {!! Form::textarea('content', null, ['class' => 'create-form__form-group__form-area form-control']) !!}
+                    {!! Form::label('content', '説明:',['class' => "create-form__form-group-label"]) !!}
+                    {!! Form::textarea('content', null, ['class' => 'create-form__form-group-form-area form-control']) !!}
                 </div>
 
                 {!! Form::submit('投稿', ['class' => 'btn btn-primary create-form__create-btn']) !!}

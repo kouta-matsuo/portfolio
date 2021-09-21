@@ -25,8 +25,9 @@
             margin: 0 auto;
             padding-top: 3rem;
         }
+    }
         
-        &__label {
+        &__form-group-label {
             @media(min-width: 769px) {
                 font-size: 1.2rem;
                 
@@ -36,7 +37,7 @@
             }
         }
         
-        &__form-area {
+        &__form-group-form-area {
             @media(min-width: 769px) {
                 font-size: 1.2rem;
             }
@@ -44,7 +45,7 @@
                 font-size: 1.4rem;
             }
         }
-    }
+    
     
     &__create-btn {
         width: 100%;
