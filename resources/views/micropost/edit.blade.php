@@ -18,7 +18,7 @@
 
                 <div class="edit-form__form-group">
                     {!! Form::label('content', '説明:',['class' => "edit-form__form-group-label"]) !!}
-                    {!! Form::textarea('content', null, ['class' => 'edit-form__form-group-form-area form-control']) !!}
+                    {!! Form::textarea('content', null, ['class' => 'edit-form__form-group-form-area edit-form__form-group-text-filed form-control']) !!}
                 </div>
 
                 {!! Form::submit('更新', ['class' => 'btn btn-primary edit-form__edit-btn']) !!}

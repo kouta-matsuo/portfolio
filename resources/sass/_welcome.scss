@@ -22,8 +22,9 @@
         text-align: center;
         font-size: 1.5rem;
         text-shadow: .1rem .1rem $blue;
+    }
 
-        &__heading {
+        &__catch-heading {
             font-size: 2rem;
             padding-bottom: 1rem;
             @media(min-width: 769px) {
@@ -36,7 +37,7 @@
         }
 
 
-        &__text {
+        &__catch-text {
             width: 80%;
             margin: 0 auto;
             text-align: justify;
@@ -50,7 +51,7 @@
             }
         }
 
-        &__btn--register {
+        &__catch-btn--register {
             margin-right: 2rem;
             @media(min-width: 769px) {
                 margin-right: 5rem;
@@ -60,7 +61,7 @@
             }
         }
 
-        &__btn {
+        &__catch-btn {
             @media(min-width: 769px) {
                 font-size: 1.2rem;
             }
@@ -68,8 +69,10 @@
                 font-size: 1.4rem;
             }
         }
-    }
+    
 }
+
+
 
 // GoToについての部分
 .top-container {
@@ -99,26 +102,29 @@
         @media(min-width: 769px) {
             padding-top: 6rem;
         }
-        &__heading {
+    }
+        &__point-heading {
             display: flex;
             align-items: center;
             @media(min-width: 769px) {
                 font-size: 2.5rem;
             }
-
-            &--number {
+}
+            &__point-heading--number {
                 font-size: 3rem;
                 text-shadow: .1rem .1rem 0 $blue, -.1rem .1rem 0 $blue, .1rem -.1rem 0 $blue, -.1rem -.1rem 0 $blue;
                 color: $yellow;
                 padding-right: 2rem;
             }
-        }
+        
 
-        &__box{
+        &__point-box{
             display: flex;
             align-items: center;
             width: 100%;
-            &__text {
+            justify-content: space-between;
+        }
+            &__point-text {
                 width: 50%;
                 padding-right: 2rem;
                 @media(min-width: 769px) {
@@ -130,11 +136,11 @@
                 }
             }
 
-            &__img {
+            &__point-img {
                 width: 50%;
                 height: auto;
                 object-fit: contain;
             }
-        }
-    }
+        
+    
 }

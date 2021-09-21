@@ -108,6 +108,9 @@
     } //ページネーション
     .pagination {
         padding-left: 2rem;
+        .page-link {
+            padding: 1.5rem;
+        }
     } 
     
     //list.blade.phpで指定している投稿がなかったときのメッセージ表示

@@ -19,7 +19,7 @@
                     
                 <div class="create-form__form-group">    
                     {!! Form::label('content', '説明:',['class' => "create-form__form-group-label"]) !!}
-                    {!! Form::textarea('content', null, ['class' => 'create-form__form-group-form-area form-control']) !!}
+                    {!! Form::textarea('content', null, ['class' => 'create-form__form-group-form-area create-form__form-group-text-filed form-control']) !!}
                 </div>
 
                 {!! Form::submit('投稿', ['class' => 'btn btn-primary create-form__create-btn']) !!}
