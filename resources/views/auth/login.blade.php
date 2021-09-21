@@ -9,13 +9,13 @@
 <div class="login-form">
     {!! Form::open(['route' => 'login.post']) !!}
                 <div class="login-form__form-group">
-                    {!! Form::label('email', 'メールアドレス',['class' => "login-form__form-group__label"]) !!}
-                    {!! Form::email('email', null, ['class' => 'login-form__form-group__form-area form-control']) !!}
+                    {!! Form::label('email', 'メールアドレス',['class' => "login-form__form-group-label"]) !!}
+                    {!! Form::email('email', null, ['class' => 'login-form__form-group-form-area form-control']) !!}
                 </div>
 
                 <div class="login-form__form-group login-form__form-group--padding">
-                    {!! Form::label('password', 'パスワード',['class' => "login-form__form-group__label"]) !!}
-                    {!! Form::password('password', ['class' => 'login-form__form-group__form-area form-control']) !!}
+                    {!! Form::label('password', 'パスワード',['class' => "login-form__form-group-label"]) !!}
+                    {!! Form::password('password', ['class' => 'login-form__form-group-form-area form-control']) !!}
                 </div>
 
                 {!! Form::submit('ログイン', ['class' => 'btn btn-primary login-form__btn']) !!}

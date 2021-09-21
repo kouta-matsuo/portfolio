@@ -17,11 +17,12 @@
             margin: 0 auto;
             padding-bottom: 3rem;
         }
-        &--padding {
+    }
+        &__form-group--padding {
             padding-bottom: 2rem;
         }
 
-        &__label {
+        &__form-group-label {
             @media(min-width: 769px) {
                 width: 50%;
                 text-align: center;
@@ -31,11 +32,6 @@
                 font-size: 1.4rem;
             }
         }
-
-
-
-    }
-
 
 
     &__register-link {
