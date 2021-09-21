@@ -20,7 +20,7 @@
 
 
 
-    &__list {
+    &-list {
         list-style: none;
         width: 50%;
         text-align: center;
@@ -29,8 +29,9 @@
             padding-bottom: 5rem;
             text-align: center;
         }
+    }
 
-        &__link {
+        &-link {
             color: $white;
             text-decoration: none;
             @media(min-width: 769px) {
@@ -54,5 +55,5 @@
             }
         }
 
-    }
+    
 }
