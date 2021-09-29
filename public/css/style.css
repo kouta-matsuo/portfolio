@@ -388,93 +388,93 @@ header .header-top__btn--logout {
 .big__freme:first-child {
   padding-top: 12rem;
 }
-.big__freme__container {
+.big__freme-container {
   width: 100%;
   border-radius: 0.5rem;
   border: 0.2rem solid #003366;
   padding: 2rem 0;
 }
-.big__freme__container-microposts {
+.big__freme-container-microposts {
   display: flex;
   width: calc(100% - 2rem);
 }
-.big__freme__container-text {
+.big__freme-container-text {
   padding: 0 1rem 1rem 0;
   border-bottom: 0.2rem solid #999999;
   width: 100%;
 }
 @media (min-width: 769px) {
-  .big__freme__container-text {
+  .big__freme-container-text {
     font-size: 1.2rem;
   }
 }
 @media (min-width: 1024px) {
-  .big__freme__container-text {
+  .big__freme-container-text {
     font-size: 1.4rem;
   }
 }
-.big__freme__container-text--margin {
+.big__freme-container-text--margin {
   margin-left: 2rem;
   width: 35%;
 }
-.big__freme__container-form {
+.big__freme-container-form {
   display: flex;
   justify-content: flex-end;
 }
-.big__freme__container-btn {
+.big__freme-container-btn {
   font-size: 2rem;
   text-align: right;
 }
 @media (min-width: 769px) {
-  .big__freme__container-btn {
+  .big__freme-container-btn {
     font-size: 3rem;
     transition: 0.5s;
   }
-  .big__freme__container-btn:hover {
+  .big__freme-container-btn:hover {
     transform: scale(1.3);
   }
 }
-.big__freme__container-btn--unfavorite {
+.big__freme-container-btn--unfavorite {
   color: #FF69A3;
 }
-.big__freme__micropost-link {
+.big__freme-micropost-link {
   display: flex;
   justify-content: space-between;
 }
-.big__freme__micropost-edit-btn {
+.big__freme-micropost-edit-btn {
   width: 7rem;
 }
 @media (min-width: 769px) {
-  .big__freme__micropost-edit-btn {
+  .big__freme-micropost-edit-btn {
     transition: 0.5s;
     font-size: 1.2rem;
     width: 8.5rem;
   }
-  .big__freme__micropost-edit-btn:hover {
+  .big__freme-micropost-edit-btn:hover {
     transform: scale(1.2);
   }
 }
 @media (min-width: 1024px) {
-  .big__freme__micropost-edit-btn {
+  .big__freme-micropost-edit-btn {
     font-size: 1.4rem;
     width: 10rem;
   }
 }
-.big__freme__micropost-delete-btn {
+.big__freme-micropost-delete-btn {
   width: 7rem;
 }
 @media (min-width: 769px) {
-  .big__freme__micropost-delete-btn {
+  .big__freme-micropost-delete-btn {
     transition: 0.5s;
     font-size: 1.2rem;
     width: 8.5rem;
   }
-  .big__freme__micropost-delete-btn:hover {
+  .big__freme-micropost-delete-btn:hover {
     transform: scale(1.2);
   }
 }
 @media (min-width: 1024px) {
-  .big__freme__micropost-delete-btn {
+  .big__freme-micropost-delete-btn {
     font-size: 1.4rem;
     width: 10rem;
   }

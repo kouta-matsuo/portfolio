@@ -15,7 +15,7 @@
             {{--ユーザ登録ページへのリンク--}}
             {!! link_to_route('signup.get', '新規登録はこちら', [], ['class' => 'btn btn-lg btn-primary top-nav__catch-btn top-nav__catch-btn--register']) !!}
             {{--ログインページへのリンク--}}
-            {!! link_to_route('login', 'ログインはこちら', [], ['class' => 'btn btn-lg btn-success top-nav__catch__btn top-nav__catch__btn--login']) !!}
+            {!! link_to_route('login', 'ログインはこちら', [], ['class' => 'btn btn-lg btn-success top-nav__catch-btn top-nav__catch-btn--login']) !!}
         </div>
     </div>
 

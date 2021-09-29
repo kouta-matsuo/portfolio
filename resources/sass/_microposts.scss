@@ -20,18 +20,18 @@
             padding-top: 12rem;
         }
     } // データベースの値を表示する
-    &__freme__container {
+    &__freme-container {
         width: 100%; // border: .1rem solid $blue;
         border-radius: .5rem;
         border: .2rem solid $blue;
         padding: 2rem 0;
     }
 
-    &__freme__container-microposts {
+    &__freme-container-microposts {
         display: flex;
         width: calc(100% - 2rem);
     }
-    &__freme__container-text {
+    &__freme-container-text {
         padding: 0 1rem 1rem 0;
         border-bottom: .2rem solid $gray;
         width: 100%;
@@ -43,7 +43,7 @@
         }
     }
 
-    &__freme__container-text--margin {
+    &__freme-container-text--margin {
         margin-left: 2rem;
         width: 35%;
 
@@ -51,11 +51,11 @@
 
 
 
-    &__freme__container-form {
+    &__freme-container-form {
         display: flex;
         justify-content: flex-end;
     } // お気に入りボタンの大きさ
-    &__freme__container-btn {
+    &__freme-container-btn {
         font-size: 2rem;
         text-align: right;
         @media(min-width: 769px) {
@@ -67,15 +67,15 @@
             }
         }
     }
-    &__freme__container-btn--unfavorite {
+    &__freme-container-btn--unfavorite {
         color: $pink;
     } 
     // 編集ボタンと削除ボタンの親
-    &__freme__micropost-link {
+    &__freme-micropost-link {
         display: flex;
         justify-content: space-between;
     } // 編集ボタン
-    &__freme__micropost-edit-btn {
+    &__freme-micropost-edit-btn {
         width: 7rem;
         @media(min-width: 769px) {
             transition: .5s;
@@ -91,7 +91,7 @@
             width: 10rem;
         }
     } // 削除ボタン
-    &__freme__micropost-delete-btn {
+    &__freme-micropost-delete-btn {
         width: 7rem;
         @media(min-width: 769px) {
             transition: .5s;
